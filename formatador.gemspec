@@ -64,7 +64,7 @@ Gem::Specification.new do |s|
     Gemfile
     README.rdoc
     Rakefile
-    changelog.txt
+    CHANGELOG.md
     formatador.gemspec
     lib/formatador.rb
     lib/formatador/progressbar.rb
