@@ -1,0 +1,6 @@
+--require ./spec/spec_helper
+--color
+--format documentation
+--backtrace
+--warnings
+--profile 10

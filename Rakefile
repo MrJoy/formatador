@@ -43,16 +43,15 @@ end
 #
 #############################################################################
 
-require 'shindo/rake'
-Shindo::Rake.new
-
-task :default => :tests
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new(:spec)
+task :default => :spec
 
 desc "Generate RCov test coverage and open in your browser"
 task :coverage do
   require 'rcov'
   sh "rm -fr coverage"
-  sh "rcov test/test_*.rb"
+  sh "rcov spec/*_spec.rb"
   sh "open coverage/index.html"
 end
 

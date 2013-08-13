@@ -53,7 +53,7 @@ Gem::Specification.new do |s|
   ## List your development dependencies here. Development dependencies are
   ## those that are only needed during development
   s.add_development_dependency('rake')
-  s.add_development_dependency('shindo')
+  s.add_development_dependency('rspec')
 
   ## Leave this section as-is. It will be automatically generated from the
   ## contents of your Git repository via the gemspec task. DO NOT REMOVE
@@ -68,13 +68,13 @@ Gem::Specification.new do |s|
     lib/formatador.rb
     lib/formatador/progressbar.rb
     lib/formatador/table.rb
-    tests/basic_tests.rb
-    tests/table_tests.rb
-    tests/tests_helper.rb
+    spec/basic_spec.rb
+    spec/table_spec.rb
+    spec/spec_helper.rb
   ]
   # = MANIFEST =
 
   ## Test files will be grabbed from the file list. Make sure the path glob
   ## matches what you actually use.
-  s.test_files = s.files.select { |path| path =~ /^[spec|tests]\/.*_[spec|tests]\.rb/ }
+  s.test_files = s.files.select { |path| path =~ /^spec\/.*$/ }
 end
