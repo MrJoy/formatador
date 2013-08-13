@@ -49,10 +49,10 @@ task :default => :spec
 
 desc "Generate RCov test coverage and open in your browser"
 task :coverage do
-  require 'rcov'
-  sh "rm -fr coverage"
-  sh "rcov spec/*_spec.rb"
-  sh "open coverage/index.html"
+  old_value = ENV['COVERAGE']
+  ENV['COVERAGE'] = "1"
+  Rake::Task[:spec].invoke
+  ENV['COVERAGE'] = old_value
 end
 
 require 'rdoc/task'

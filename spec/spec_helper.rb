@@ -1,3 +1,10 @@
+if(ENV['COVERAGE'].to_i > 0)
+  require 'simplecov'
+
+  SimpleCov.start do
+  end
+end
+
 require './lib/formatador'
 
 Dir.glob("./spec/support/**/*.rb").each do |fname|
