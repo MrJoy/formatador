@@ -9,3 +9,4 @@
 * Add simple plugin mechanism to facilitate formatting of particular
   columns and/or types.
 * Alignment support for numeric types.
+* Change documentation to something nicer that supports Markdown, like Yard.
