@@ -72,6 +72,7 @@ Gem::Specification.new do |s|
     spec/basic_spec.rb
     spec/table_spec.rb
     spec/spec_helper.rb
+    spec/support/capture.rb
   ]
   # = MANIFEST =
 
